@@ -1,8 +1,23 @@
+# Site Settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-title: Dhani's Blogtest
-description: My Blog
-
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
+
+  exclude:
+  - Gemfile
+
+# Basic
+title: "Cyber Blog and Other Computery Stuff"
+author:
+  name: "Dhani White"
+description: "Cyber Security and Digital Forensics student documenting hobbies and academic learning"
+url: "https://thedhandelion.github.io"
+
+# Personalisation
+logo: "/assets/images/templogo.png"
+
+# Blog Settings
+permalink: /:year/:title/
+paginate: 5 #how many blogposts on homepage
