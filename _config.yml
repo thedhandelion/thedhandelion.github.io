@@ -6,7 +6,7 @@ plugins:
  - jekyll-feed
  - jekyll-sitemap
 
-  exclude:
+exclude:
  - Gemfile
 
 # Basic
