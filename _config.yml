@@ -19,6 +19,12 @@ url: "https://thedhandelion.github.io"
 # Personalisation
 logo: "/assets/images/templogo.png"
 
+# Page Settings
+collections:
+ pages:
+  output: true
+  permalink: /:title/
+
 # Blog Settings
 permalink: /:year/:title/
 paginate: 5 #how many blogposts on homepage
