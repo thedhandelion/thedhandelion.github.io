@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+// Load the theme's default styles first
+@import "minimal-mistakes/skins/default"; 
+@import "minimal-mistakes";
+
+// Custom font faces
+@font-face {
+  font-family: "HeadingFont";
+  font-display: swap;
+  src: url("../fonts/PrintedCircuitBoard.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BodyFont";
+  font-display: swap;
+  src: url("../fonts/Barlow-Medium.ttf") format("ttf");
+  font-weight: 400;
+}
+
+// Apply fonts site-wide
+h1, h2, h3, h4 {
+  font-family: "HeadingFont", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "BodyFont", Arial, sans-serif;
+}
+
+// Optional: monospace for code
+code, pre {
+  font-family: "Fira Code", monospace;
+}
