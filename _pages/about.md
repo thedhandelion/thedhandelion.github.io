@@ -1,5 +1,5 @@
 layout: page
-title: about
-<> permalink: /about
+title: "About" 
+permalink: /about
 
 This is the about page for my site!
