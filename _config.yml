@@ -1,4 +1,5 @@
 # Site Settings
+  # Themes
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 plugins:
@@ -8,6 +9,14 @@ plugins:
 
 exclude:
  - Gemfile
+
+  # CSS
+sass:
+ sass_dir: assets/css
+ style: compressed
+
+include:
+ - assets
 
 # Basic
 title: "Cyber Blog and Other Computery Stuff"
