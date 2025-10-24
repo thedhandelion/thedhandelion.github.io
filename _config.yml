@@ -25,6 +25,12 @@ collections:
   output: true
   permalink: /:title/
 
+nav:
+ - title: "Home"
+   url: /
+ - title: "About"
+   url: /about/
+
 # Blog Settings
 permalink: /:year/:title/
 paginate: 5 #how many blogposts on homepage
