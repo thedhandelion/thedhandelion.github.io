@@ -33,3 +33,76 @@ body {
 code, pre {
   font-family: "Fira Code", monospace;
 }
+
+.top-banner {
+  background-color: #2f3131;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.site-title-group h1 {
+  font-family: "HeadingFont", sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.site-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.intro-box {
+  background-color: #555;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.post-preview {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.post-preview h3 {
+  margin-top: 0;
+  font-family: "HeadingFont", sans-serif;
+}
+
+.post-date {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+}
