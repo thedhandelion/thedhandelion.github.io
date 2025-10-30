@@ -31,8 +31,8 @@ logo: "/assets/images/templogo.png"
 # Page Settings
 collections:
  pages:
-  output: true
-  permalink: /:title/
+   output: true
+   permalink: /:title/
 
 nav:
  - title: "Home"
