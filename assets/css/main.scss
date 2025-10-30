@@ -8,14 +8,14 @@
 @font-face {
   font-family: "HeadingFont";
   font-display: swap;
-  src: url("../fonts/PrintedCircuitBoard.ttf") format("ttf");
+  src: url("/assets/fonts/PrintedCircuitBoard.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "BodyFont";
   font-display: swap;
-  src: url("../fonts/Barlow-Medium.ttf") format("ttf");
+  src: url("/assets/fonts/Barlow-Medium.ttf") format("truetype");
   font-weight: 400;
 }
 
