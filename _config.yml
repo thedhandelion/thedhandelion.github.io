@@ -20,7 +20,7 @@ author: Dhani White
 ###############################################
 
 navbar-links:
-  Blogs: "aboutme"
+  Blogs:
     - Blog_One: "2020-02-28-sample-markdown"
     - Blog_Two: "2020-02-26-flake-it-till-you-make-it"
   About: "aboutme"
