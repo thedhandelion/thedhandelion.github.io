@@ -20,11 +20,10 @@ author: Dhani White
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "--"
-    - Learn markdown: "--"
-  Author's home: "https://thedhandelion.github.io"
+  Blogs: "aboutme"
+    - Blog_One: "2020-02-28-sample-markdown"
+    - Blog_Two: "2020-02-26-flake-it-till-you-make-it"
+  About: "aboutme"
 
 ################
 # --- Logo --- #
@@ -51,16 +50,16 @@ title-img: "/assets/img/WebTextLogoGif.gif"
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   #email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
   #facebook: deanattali
-  github: https://github.com/thedhandelion
+  github: thedhandelion
   #twitter: daattali
   #patreon: DeanAttali
   #youtube: "@daattali"
   #whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
-  linkedin: https://www.linkedin.com/in/dhani-white/
+  linkedin: dhani-white
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
