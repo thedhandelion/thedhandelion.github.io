@@ -10,9 +10,11 @@ mathjax: true
 author: Dhani White
 ---
 
-I think one of the most humiliating feelings is being sat in a lecture, minding my own business, laptop on the desk in front of me, when, suddenly, the laptop's fans ramp up to max speed and I watch, in a state of awe alongside all the other students, as the laptop just takes off towards the ceiling [walter white fly scene gif]. Only for the battery to die after 6 seconds and crash back onto the desk, all my peers pointing and laughing as i run out of the room, laptop clutched under my arms, blinded by the tears in my eyes, then i slip on a banana peel and suddenly all my clothes a gone and my teeth are falling out and I try screaming but i can't make any noise and i'm trapped and everything is dark and scary and i just want out of this living hell!
+I think one of the most humiliating feelings is being sat in a lecture, minding my own business, laptop on the desk in front of me, when, suddenly, the laptop's fans ramp up to max speed and I watch, in a state of awe alongside all the other students, as the laptop just takes off towards the ceiling.
+![Walter_White_Fly](assets/img/2026-02-02-Make_Gaming_Laptop_Usable/WW_Fly.gif){: .mx-auto.d-block :}
+Only for the battery to die after 6 seconds and crash back onto the desk, all my peers pointing and laughing as I run out of the room, laptop clutched under my arms, blinded by the tears in my eyes, then I slip on a banana peel and suddenly all my clothes a gone and my teeth are falling out and I try screaming but I can't make any noise and I'm trapped and everything is dark and scary and I just want out of this living hell!
 
-Anyway, that was the average monday feeling during lectorials in my first couple of months of uni, having my £500 gaming laptop imitate a TU-95 then proceed to last for 20 minutes of note-taking before calling it a day, whilst everyone else with their £100 notebooks breeze through the lecture and still end the day above 50%. 
+Anyway, that was the average monday feeling during lectorials in my first couple of months of uni, having my £500 gaming laptop imitate a [TU-95](https://en.wikipedia.org/wiki/Tupolev_Tu-95) then proceed to last for 20 minutes of note-taking before calling it a day, whilst everyone else with their £100 notebooks breeze through the lecture and still end the day above 50%. 
 
 (stuff like running VMs and Games, and how a gaming laptop, in theory, should perform better than cheap laptops in every way blah blah blah)
 
