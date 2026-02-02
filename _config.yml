@@ -21,6 +21,7 @@ author: Dhani White
 
 navbar-links:
   Blogs:
+    - Laptop_Battery_Life: "2026-02-02-Make_Gaming_Laptop_Usable"
     - Blog_One: "2020-02-28-sample-markdown"
     - Blog_Two: "2020-02-26-flake-it-till-you-make-it"
   About: "aboutme"
