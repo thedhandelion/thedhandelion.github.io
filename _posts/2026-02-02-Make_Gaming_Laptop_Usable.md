@@ -3,10 +3,9 @@ layout: post
 title: "Improve Gaming Laptop's Battery Life or:"
 subtitle: "How to make a gaming laptop actually usable for work"
 gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [otherComputeryStuff]
 comments: false
-mathjax: true
+mathjax: false
 author: Dhani White
 ---
 
@@ -14,15 +13,15 @@ author: Dhani White
 
 I think one of the most humiliating feelings is being sat in a lecture hall, minding my own business and taking notes on my laptop, when, suddenly, the laptop's fans ramp up to max speed and I watch, in a state of awe (alongside all the other students), as the laptop just takes off towards the ceiling...
 
-<center><img src="https://github.com/thedhandelion/thedhandelion.github.io/blob/main/assets/img/2026-02-02-Make_Gaming_Laptop_Usable/WW_Fly.gif" alt="Breaking Bad - The Fly" width="300" height="170"></center>
+<center><img src="/assets/img/2026-02-02-Make_Gaming_Laptop_Usable/WW_Fly.gif" alt="Breaking Bad - The Fly" width="300" height="170"></center>
 
 ...Only for the battery to die after 6 seconds and crash back onto the desk, all my peers pointing and laughing as I run out of the room, laptop clutched under my arms, blinded by the tears in my eyes, then I slip on a banana peel and suddenly all my clothes are gone and my teeth are falling out and I try screaming but I can't make any noise and I'm trapped and everything is dark and scary and I ask myself "what sort of nightmare is this?!"...
 
 Alas, it was no nightmare, but the average Monday feeling during my university lectorials (well, for the first few months anyway). Never a day went by when my £430 HP Pavilion gaming laptop decided _not_ to imitate a [TU-95](https://en.wikipedia.org/wiki/Tupolev_Tu-95) and then proceed to call it a day after 20 minutes of note-taking, punishing me for not bringing the bulky charger. Then, I sit there mindlessly (I mean eagerly, of course...) listening to the lecturer preach their magical technical words I pretend to understand, wondering how on earth everyone else's £150 notebooks can just breeze through a full day of lectures and still have enough juice for a midnight Netflix-binge before it packs up and demands a recharge. 
 
-Look, I get my bargain (especially in 2023) gaming laptop has a 15.6" 144hz display, a Ryzen 5 5600H 6C/12T 3.3GHz processor, a GTX 1650 and 16GB 3200MHz RAM, not to mention an LED keyboard (green, of all colours, but it's okay because I colour-themed it to [Zygarde](https://bulbapedia.bulbagarden.net/wiki/Zygarde), and they have a baby little laptop with no specs and no personality ([Eevee](https://bulbapedia.bulbagarden.net/wiki/Eevee) in comparison), so of course the battery will last longer, but surely, when my laptop is running Word, it shouldn't be sat using up all its resources for it, right? I'll illustrate with a graph I made using MS Paint (it took roughly 80% of my laptop's battery life to make this):
+Look, I get my bargain (especially in 2023) gaming laptop has a 15.6" 144hz display, a Ryzen 5 5600H 6C/12T 3.3GHz processor, a GTX 1650 and 16GB 3200MHz RAM, not to mention an LED keyboard (green, of all colours, but it's okay because I colour-themed it to [Zygarde](https://bulbapedia.bulbagarden.net/wiki/Zygarde)), and they have a baby little laptop with no specs and no personality ([Eevee](https://bulbapedia.bulbagarden.net/wiki/Eevee), in comparison), so of course their batteries will last longer, but surely, when my laptop is running Word, it shouldn't be sat using up all its resources for it, right? I'll illustrate with a graph I made using MS Paint (it took roughly 80% of my laptop's battery life to make this):
 
-<center><img src="https://github.com/thedhandelion/thedhandelion.github.io/blob/main/assets/img/2026-02-02-Make_Gaming_Laptop_Usable/Amazing_Graph.png" alt="Performance-Resource_Usage" width="300" height="300"></center>
+<center><img src="/assets/img/2026-02-02-Make_Gaming_Laptop_Usable/Amazing_Graph.png" alt="Performance-Resource_Usage" width="300" height="300"></center>
 
 (stuff like running VMs and Games)
 
@@ -30,6 +29,7 @@ Thankfully, however, I'm a nerdy nerd and I did some silly techy stuff to get it
 
 # The Less Boring Bit Where Stuff Actually Gets Done
 
+<div style="height: 60px;"></div>
 
 
 
