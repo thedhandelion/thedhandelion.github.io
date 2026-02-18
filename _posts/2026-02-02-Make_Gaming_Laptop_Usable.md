@@ -21,103 +21,36 @@ Alas, it was no nightmare, but the average Monday feeling during my university l
 
 Look, I get my bargain (especially in 2023) gaming laptop has a 15.6" 144hz display, a Ryzen 5 5600H 6C/12T 3.3GHz processor, a GTX 1650 and 16GB 3200MHz RAM, not to mention an LED keyboard (green, of all colours, but it's okay because I colour-themed it to [Zygarde](https://bulbapedia.bulbagarden.net/wiki/Zygarde)), and they have a baby little laptop with no specs and no personality ([Eevee](https://bulbapedia.bulbagarden.net/wiki/Eevee), in comparison), so of course their batteries will last longer, but surely, when my laptop is running Word, it shouldn't be sat using up all its resources for it, right? I'll illustrate with a graph I made using MS Paint (it took roughly 80% of my laptop's battery life to make this):
 
-<center><img src="/assets/img/2026-02-02-Make_Gaming_Laptop_Usable/Amazing_Graph.png" alt="Performance-Resource_Usage" width="300" height="300"></center>
+<center><img src="/assets/img/2026-02-02-Make_Gaming_Laptop_Usable/Amazing_Graph.png" alt="Performance-Resource_Usage" width="500" height="500"></center>
 
-(stuff like running VMs and Games)
+Before starting university, 200 miles away from my hometown, I figured there was no chance I was going to be lugging my big fat computer back and forth, especially as all my visits home would involve coaches and trains. So I needed a laptop powerful enough for both gaming and running virtual machines (sometimes two or three at once), which is where this laptop really shined for me! I just wished that it could last a blooming hour on battery with a Word document and a hundred prayers... a pain in the bum, to say the least.
 
-Thankfully, however, I'm a nerdy nerd and I did some silly techy stuff to get it to actually last a few hours when i needed it to, while still being able to switch to 'game mode' when I'm back home with the charger in, ready to spend the next 2 hours mindlessly scrolling through games, realising they don't excite me the way they did when i was younger and life was easier, then opting to watch a movie instead... £500 well spent I reckon.
+Thankfully, however, I'm a nerdy nerd and I did some silly techy stuff to get it to actually last a few hours when I needed it to, while still being able to switch to 'game mode' when I'm back home with the charger in, ready to spend the next 2 hours mindlessly scrolling through games, realising they don't excite me the way they did when I was younger and life was easier, then opting to watch a movie instead... £500 well spent I reckon.
 
 # The Less Boring Bit Where Stuff Actually Gets Done
 
+After many a researching, these steps were what made my laptop go from lasting {time hours} on battery on an average uni day to {time hours} on battery, doing the same stuff.
+
+## 1. Deactivating the Graphics Card (until it's actually needed)
+
+The greatest thing about gaming laptops is the wonderful presence of a discrete graphics card, but with great power comes great power-usage, making it our greatest nemesis when battery is priority.
+
+For some reason, laptops are also stupid and decide that the graphics card is absolutely 100% without-a-doubt necessary to run a silly little note-taking app and a web browser. This usage alone is what eats up all the battery, so what we need to do is limit the GPU usage to videogames (and other intensive programs such as virtual machines) _only_. This will also stop the GPU fan from ramping up.
+
+### NVIDIA
+
+### AMD
+
+My laptop has an NVIDIA graphics card, so I am very familiar with the steps above. AMD, however, I am yet to have first-hand experience with. Please take the below steps as a rough guide as it's based off information I have found online. 
+
+## 2. Power Plans
+
+Those two words come up all the time when it comes to battery-saving, but the Control Panel's 'Power Options' is our second-best way to save some juice. Firstly, because you can set individual settings to prioritise battery life over performance and, secondly (and more importantly), because you can limit the CPU's clock speed, which both saves power and also helps stop the CPU getting too hot for absolutely no reason and ramping up the fan.
+
+1. Word
+2. Word
+3. Word
+
+## 3. ---
+
 <div style="height: 60px;"></div>
-
-
-
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
-
-**Here is some bold text**
-
-## Here is a secondary heading
-
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
-
-Here's a table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-How about a yummy crepe?
-
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
-
-It can also be centered!
-
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
-
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
-</details>
