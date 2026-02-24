@@ -37,9 +37,30 @@ The greatest thing about gaming laptops is the wonderful presence of a discrete 
 
 For some reason, laptops are also stupid and decide that the graphics card is absolutely 100% without-a-doubt necessary to run a silly little note-taking app and a web browser. This usage alone is what eats up all the battery, so what we need to do is limit the GPU usage to videogames (and other intensive programs such as virtual machines) _only_. This will also stop the GPU fan from ramping up.
 
-### NVIDIA
+### Identifying GPU-usage (when and what)
 
-### AMD
+To begin, the best thing to do is a cheeky bit of reconnaissance - identifying how often the dedicated GPU is being used and what is using it.
+
+#### On laptops with NVIDIA dedicated graphics
+Open 'NVIDIA Control Panel' (either through the start menu or right-clicking the desktop), in the top toolbar, select _Desktop_ and then check _Display GPU Activity Icon In Notification Area_. On the right-hand side of the Taskbar, you should see a green or grey icon (check 'hidden icons' if not). Hover over it with the cursor, and it will give you some information: 'NVIDIA [GPU] ([#] Display, [#] Programs)', telling you your GPU model, the number of displays using the GPU, and the number of programs using the GPU, too. If you click on it, it will display a list of the programs using the GPU. If the icon itself is green, it means the dedicated GPU is currently being used, either by a program or an external display. If the icon is grey, it means the GPU is currently inactive - this is what we want most of the time (except when we need to use it). 
+
+#### On laptops with AMD dedicated graphics:
+Unfortunately, AMD Adrenaline does not have a tool quite as simple as NVIDIA's Control Panel. There is, however, a slightly inconvenient workaround. 
+Begin by opening the Windows Task Manager (right-clicking the Taskbar, using the start menu, or pressing CTRL+SHIFT+ESC). Under _Processes_, right-click the column header row (where it says 'Name', 'Status', 'CPU', etc.) and check _GPU_ and _GPU Engine_. You can check the _Performance_ tab to note which graphics processor is labeled 'GPU 0' and which is 'GPU 1'. Go back to the _Processes_ tab, scroll right, and click _GPU Engine_ twice to group all the processes that are using one of the graphics cards. Keep an eye out for which ones are using the dedicated GPU (they may be labeled clearly, or may just say 'GPU 0'/'GPU 1' - so use the previous steps to identify which is which). 
+
+Regardless of what GPU you have, as long as you now have a means of identifying how often the dedicated GPU is being used and what programs are using it, we are ready to move on.
+
+Begin by using your laptop as normal; open a couple of browsers, a couple programs (Office apps, note-taking apps, programs for work, etc.) and keeping an eye on what is using the dedicated GPU (either through NVIDIA's tray icon or Task Manager for AMD GPUs). 
+_Note: If your laptop is connected to an external display, I recommend unplugging it and restarting the laptop for accurate results._
+Now, run a couple of GPU-intensive programs (videogames, 3D modelling, etc.). This isn't quite as important, but it's good to get an idea of what is and isn't utilising the dedicated GPU. 
+
+### Disabling the GPU
+
+#### Windows built-in - try this first!
+
+#### NVIDIA-specific - when the above doesn't work
+
+#### AMD-specific - when the above doesn't work
 
 My laptop has an NVIDIA graphics card, so I am very familiar with the steps above. AMD, however, I am yet to have first-hand experience with. Please take the below steps as a rough guide as it's based off information I have found online. 
 
