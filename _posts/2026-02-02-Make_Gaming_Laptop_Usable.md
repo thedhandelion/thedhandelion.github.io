@@ -42,11 +42,15 @@ For some reason, laptops are also stupid and decide that the graphics card is ab
 To begin, the best thing to do is a cheeky bit of reconnaissance - identifying how often the dedicated GPU is being used and what is using it.
 
 #### On laptops with NVIDIA dedicated graphics
-Open 'NVIDIA Control Panel' (either through the start menu or right-clicking the desktop), in the top toolbar, select _Desktop_ and then check _Display GPU Activity Icon In Notification Area_. On the right-hand side of the Taskbar, you should see a green or grey icon (check 'hidden icons' if not). Hover over it with the cursor, and it will give you some information: 'NVIDIA [GPU] ([#] Display, [#] Programs)', telling you your GPU model, the number of displays using the GPU, and the number of programs using the GPU, too. If you click on it, it will display a list of the programs using the GPU. If the icon itself is green, it means the dedicated GPU is currently being used, either by a program or an external display. If the icon is grey, it means the GPU is currently inactive - this is what we want most of the time (except when we need to use it). 
+Open 'NVIDIA Control Panel' (either through the start menu or right-clicking the desktop), in the top toolbar, select _Desktop_ and then check _Display GPU Activity Icon In Notification Area_.  
+On the right-hand side of the Taskbar, you should see a green or grey icon (check 'hidden icons' if not). Hover over it with the cursor, and it will give you some information: 'NVIDIA [GPU] ([#] Display, [#] Programs)', telling you your GPU model, the number of displays using the GPU, and the number of programs using the GPU, too. If you click on it, it will display a list of the programs using the GPU.  
+If the icon itself is green, it means the dedicated GPU is currently being used, either by a program or an external display.  
+If the icon is grey, it means the GPU is currently inactive - this is what we want most of the time (except when we need to use it). 
 
 #### On laptops with AMD dedicated graphics:
-Unfortunately, AMD Adrenaline does not have a tool quite as simple as NVIDIA's Control Panel. There is, however, a slightly inconvenient workaround. 
-Begin by opening the Windows Task Manager (right-clicking the Taskbar, using the start menu, or pressing CTRL+SHIFT+ESC). Under _Processes_, right-click the column header row (where it says 'Name', 'Status', 'CPU', etc.) and check _GPU_ and _GPU Engine_. You can check the _Performance_ tab to note which graphics processor is labeled 'GPU 0' and which is 'GPU 1'. Go back to the _Processes_ tab, scroll right, and click _GPU Engine_ twice to group all the processes that are using one of the graphics cards. Keep an eye out for which ones are using the dedicated GPU (they may be labeled clearly, or may just say 'GPU 0'/'GPU 1' - so use the previous steps to identify which is which). 
+Unfortunately, AMD Radeon Settings does not have a tool quite as simple as NVIDIA's Control Panel. There is, however, a slightly inconvenient workaround.  
+Begin by opening the Windows Task Manager (right-clicking the Taskbar, using the start menu, or pressing CTRL+SHIFT+ESC). Under _Processes_, right-click the column header row (where it says 'Name', 'Status', 'CPU', etc.) and check _GPU_ and _GPU Engine_. You can check the _Performance_ tab to note which graphics processor is labeled 'GPU 0' and which is 'GPU 1'.  
+Go back to the _Processes_ tab, scroll right, and click _GPU Engine_ twice to group all the processes that are using one of the graphics cards. Keep an eye out for which ones are using the dedicated GPU (they may be labeled clearly, or may just say 'GPU 0'/'GPU 1' - so use the previous steps to identify which is which). 
 
 Regardless of what GPU you have, as long as you now have a means of identifying how often the dedicated GPU is being used and what programs are using it, we are ready to move on.
 
@@ -56,7 +60,27 @@ Now, run a couple of GPU-intensive programs (videogames, 3D modelling, etc.). Th
 
 ### Disabling the GPU
 
-#### Windows built-in - try this first!
+Now it's time to make sure the GPU is only being used when it needs to be. There are few ways to do this - for the past couple of years, I've been using the steps under ['NVIDIA-specific']([NVIDIA-specific - when the above doesn’t work](https://thedhandelion.github.io/2026-02-02-Make_Gaming_Laptop_Usable/#:~:text=NVIDIA%2Dspecific%20%2D%20when%20the%20above%20doesn%E2%80%99t%20work), but, while researching for this blog post, I have been learning about the built-in Windows method, which should hopefully be a little less faff in the long run!
+
+#### Windows built-in display settings - highest priority
+
+The Windows graphics settings has the highest priority on GPU selection, overriding programs such as the NVIDIA Control Panel. So, it makes sense to start off here to disable the dedicated GPU. 
+
+Begin by going to Settings (either through the start menu or pressing 'Win + I'), navigating to _System_ > _Display_ > _Graphics Settings_.  
+From here, under _Graphics performance preference_, you can add apps/games, click _Options_ and select one of the following:  
+  - 'Let Windows Decide'
+  - 'Power Saving' (integrated GPU)
+  - 'High Performance' (discrete GPU)
+
+Apps and programs that aren't added to this list, or those that are running 'Let Windows Decide' are automatically handled by Windows, deciding whether they should use the intergrated graphics or the dedicated graphics. It does this by selecting the integrated GPU when running 2D apps and the dedicated GPU when running 3D apps, [as explained by AMD](https://www.amd.com/en/resources/support-articles/faqs/GPU-110.html), as well as some other fancy stuff such as analysing DirectX usage and GPU load expectations. 
+
+By manually select 'Power Saving' or 'High Performance' for each app, the setting overrides Windows' automatic choice, making it particularly useful in situations where you notice a game running quite poorly and realise it's using the integrated graphics, or if you notice that Chrome is running off the dedicated graphics and that's where all your battery juice is going!
+
+This is where you use your previous reconnaissance findings to start manually changing the silly things that are wrong!  
+In my case, for example, I found that silly things were using the dedicated GPU, like the calculator app! I only noticed because of the [reconnaissance steps above](https://thedhandelion.github.io/2026-02-02-Make_Gaming_Laptop_Usable/#:~:text=Identifying%20GPU%2Dusage%20%28when%20and%20what), so I set that to 'Power Saving' for a bloomin' start.
+
+_NOTE: To ensure this step works correctly, make sure to check your NVIDIA Control Panel and set 'Preferred Graphics Processor' to 'Auto-Select._  
+_AMD removed the 'Switchable Graphics' option from the Radeon Settings in 2019._
 
 #### NVIDIA-specific - when the above doesn't work
 
